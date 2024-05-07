@@ -1,0 +1,74 @@
+@use "../../base/baseHelper" as h;
+@use "../../components/componenetsHelper" as c;
+
+
+footer {
+    padding: 100px 50px;
+}
+
+//FOOTER COLUMNS
+.footer-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: calc(100% / 4 - 20px);
+
+    & p {
+        color: h.$fontcolor-body;
+    }
+
+    & a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: h.$fontcolor-header;
+        }
+    }
+
+    //NEWSLETTER
+    & input {
+        text-decoration: none;
+        border: 0;
+        border-bottom: 1px solid black;
+
+        &:focus {
+            outline: transparent;
+        }
+
+    }
+
+    & button {
+        text-decoration: none;
+        outline: none;
+        border: 0;
+        background-color: white;
+        cursor: pointer;
+        border-bottom: 1px solid black;
+        text-transform: uppercase;
+
+        &:hover {
+            border: 2px solid h.$color-primary;
+            color: h.$color-primary;
+            border-radius: 25px;
+        }
+
+    }
+
+}
+
+.address {
+    text-wrap: wrap;
+}
+
+
+.copyright {
+    margin-top: 48px;
+    padding: 38px 0px;
+    border-top: solid 1px #D9D9D9;
+}

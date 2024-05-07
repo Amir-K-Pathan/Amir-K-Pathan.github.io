@@ -1,0 +1,165 @@
+@use '../../base/baseHelper' as h;
+@use '../../components/componenetsHelper' as c;
+
+.landing {
+    height: 716.83px;
+    position: relative;
+    background-image: url(/../assets/images/home/landing.jpg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+
+    .headline {
+        padding-top: 62px;
+        padding-left: 39px;
+        padding-bottom: 37px;
+        padding-right: 43px;
+        position: absolute;
+        background-color: h.$color-secondary;
+        width: 643px;
+        right: 58px;
+        top: 148px;
+
+        h3 {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 3px;
+            font-weight: 600;
+            padding: 0 0 4px 0;
+        }
+
+        h1 {
+            font-size: 52px;
+            line-height: 65px;
+            font-weight: 700;
+            padding: 0 0 17px 0;
+            color: h.$fontcolor-header;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            padding: 0 0 46px 0;
+        }
+
+        button {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            background-color: h.$color-accent;
+            color: white;
+            text-transform: capitalize;
+            padding: 25px 72px 25px 72px;
+            border: transparent;
+
+            &:hover {
+                text-shadow: -1px -1px 0 darken(h.$color-accent, 15%);
+                box-shadow: 0px 2px 0 darken(h.$color-accent, 15%), 2px 4px 6px darken(h.$color-accent, 15%);
+            }
+        }
+
+
+    }
+
+}
+
+.sectionpadding {
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+.range {
+    padding: 60px 128.5px;
+
+    .category-container {
+        display: flex;
+        gap: 10px;
+
+        .category {
+            width: calc(100% / 3 - 5px);
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 480px;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.our-products {
+    .products {
+        margin: 50px 102px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+
+        .product-card {
+            width: calc(100% / 4 - 25px);
+            background-color: #F4F5F7;
+
+            img {
+                // height: 285px;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+    button {
+        text-decoration: none;
+        border: solid 2px h.$color-accent;
+        background-color: white;
+        color: h.$color-accent;
+        margin: auto 50%;
+        text-wrap: nowrap;
+        padding: 10px 40px;
+
+        &:hover {
+            background-color: h.$color-accent;
+            color: white;
+
+        }
+    }
+}
+
+.inspiration {
+    margin: 40px 0px;
+    height: 670px;
+    background-color: #FCF8F3;
+    margin-bottom: 67px;
+
+    aside {
+        padding-top: 223px;
+        padding-left: 100px;
+
+        button {
+            text-decoration: none;
+            border: none;
+            background-color: h.$color-accent;
+            color: white;
+
+            cu &:hover {
+                transform: scale(1.5);
+            }
+
+        }
+    }
+}
+
+.sharecollage {
+    height: 780px;
+
+    p,
+    h2 {
+        text-align: center;
+    }
+}

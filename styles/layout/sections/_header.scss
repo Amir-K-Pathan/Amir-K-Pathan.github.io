@@ -1,0 +1,61 @@
+@use "../../base/baseHelper" as h;
+@use "../../components/componenetsHelper" as c;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-left: 54px;
+    padding-right: 100px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        & img {
+
+            height: 68px;
+        }
+
+        span {
+            @include h.montserrat(700);
+            font-size: 34px;
+            line-height: 41.45px;
+
+        }
+    }
+
+    nav {
+        display: flex;
+        column-gap: 75px;
+        overflow: hidden;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+
+        }
+    }
+
+    .aside {
+        display: flex;
+        column-gap: 45px;
+        overflow: visible;
+    }
+
+    & svg {
+        cursor: pointer;
+
+        &:not(:root) {
+            overflow: visible;
+        }
+
+        &:hover {
+            color: h.$color-primary;
+        }
+    }
+}
