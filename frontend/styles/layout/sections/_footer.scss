@@ -27,7 +27,7 @@ footer {
         color: black;
 
         &:hover {
-            color: h.$fontcolor-header;
+            @include c.hover-primary-darken
         }
     }
 
@@ -36,6 +36,10 @@ footer {
         text-decoration: none;
         border: 0;
         border-bottom: 1px solid black;
+
+        &:hover {
+            @include c.hover-primary-darken
+        }
 
         &:focus {
             outline: transparent;
@@ -53,9 +57,7 @@ footer {
         text-transform: uppercase;
 
         &:hover {
-            border: 2px solid h.$color-primary;
-            color: h.$color-primary;
-            border-radius: 25px;
+            @include c.hover-primary-darken
         }
 
     }

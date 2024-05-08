@@ -38,6 +38,10 @@ header {
             font-weight: 500;
             line-height: 24px;
 
+            &:hover {
+                @include c.hover-primary-darken
+            }
+
         }
     }
 
@@ -55,7 +59,8 @@ header {
         }
 
         &:hover {
-            color: h.$color-primary;
+            @include c.hover-primary-darken
         }
+
     }
 }

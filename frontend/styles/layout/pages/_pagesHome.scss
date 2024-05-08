@@ -1,14 +1,19 @@
 @use '../../base/baseHelper' as h;
 @use '../../components/componenetsHelper' as c;
 
+
+//LANDING
 .landing {
     height: 716.83px;
     position: relative;
-    background-image: url(../../../assets/images/home/landing.jpg);
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
     background-color: #cccccc;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 
     .headline {
         padding-top: 62px;
@@ -60,9 +65,7 @@
             }
         }
 
-
     }
-
 }
 
 .sectionpadding {
@@ -71,20 +74,23 @@
 }
 
 
+//RANGE
 .range {
     padding: 60px 128.5px;
 
     .category-container {
         display: flex;
         gap: 10px;
+        height: 480px;
 
         .category {
             width: calc(100% / 3 - 5px);
 
             img {
                 object-fit: cover;
-                width: 100%;
-                height: 480px;
+                height: 100%;
+                cursor: pointer;
+
             }
 
             p {
@@ -94,6 +100,7 @@
     }
 }
 
+//PRODUCTS
 .our-products {
     .products {
         margin: 50px 102px;
@@ -102,14 +109,45 @@
         flex-wrap: wrap;
         gap: 32px;
 
+
+
         .product-card {
             width: calc(100% / 4 - 25px);
             background-color: #F4F5F7;
 
-            img {
-                // height: 285px;
-                object-fit: cover;
+            .product__img-wrapper {
+                height: 302px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    cursor: pointer;
+
+                }
             }
+        }
+
+        .product__title {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 28.8px;
+
+        }
+
+        .product__description {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+
+        }
+
+        .product__price {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+
         }
 
     }
