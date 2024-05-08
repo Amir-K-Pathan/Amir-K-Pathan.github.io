@@ -16,6 +16,7 @@ footer {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    column-gap: 40px;
     width: calc(100% / 4 - 20px);
 
     & p {
@@ -73,4 +74,24 @@ footer {
     margin-top: 48px;
     padding: 38px 0px;
     border-top: solid 1px #D9D9D9;
+}
+
+//flexgrow/basis
+
+.footer__address {
+    flex: 1 max-content;
+}
+
+.footer__page-nav {
+    flex: 0.75 max-content;
+
+}
+
+.footer__policies {
+    flex: 0.75 max-content;
+
+}
+
+.footer__newsletter {
+    flex: 0.0 max-content;
 }

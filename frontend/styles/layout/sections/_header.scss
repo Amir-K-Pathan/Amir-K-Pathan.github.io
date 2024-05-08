@@ -12,6 +12,7 @@ header {
     .logo {
         display: flex;
         align-items: center;
+        flex: 1.2 max-content;
 
         & img {
 
@@ -30,6 +31,7 @@ header {
         display: flex;
         column-gap: 75px;
         overflow: hidden;
+        flex: max-content;
 
         a {
             text-decoration: none;
@@ -49,6 +51,7 @@ header {
         display: flex;
         column-gap: 45px;
         overflow: visible;
+        flex: 0.0 max-content;
     }
 
     & svg {
