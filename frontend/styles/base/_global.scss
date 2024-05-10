@@ -1,3 +1,5 @@
+@use "./variables" as v;
+
 button,
 a {
     cursor: pointer;
@@ -5,4 +7,19 @@ a {
 
 * {
     font-family: 'Poppins', sans-serif;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: darken(v.$fontcolor-header, 50%);
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    border-bottom: darken(v.$fontcolor-header, 50%);
+    color: darken(v.$fontcolor-header, 50%);
+    text-decoration: none;
 }

@@ -214,6 +214,37 @@
 
         }
     }
+
+    .inspiration__image-selector {
+
+        form {
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+            column-gap: 8px;
+        }
+
+        & button {
+            text-decoration: none;
+            border: none;
+            position: relative;
+            width: 30px;
+
+            &:active {
+                border: h.$fontcolor-header
+            }
+        }
+
+
+        .dot {
+            position: relative;
+            bottom: 23px;
+            right: 6px;
+            z-index: 3;
+        }
+
+    }
+
 }
 
 .sharecollage {
@@ -223,4 +254,47 @@
     h2 {
         text-align: center;
     }
+}
+
+//radio
+input[type="radio"]+svg {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+input[type="radio"]~svg {
+    align-items: center;
+    fill: gray;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 3px;
+    display: block;
+    margin: auto;
+
+}
+
+#radios label {
+    position: relative;
+    width: min-content;
+    height: min-content;
+
+
+    input[type="radio"] {
+        position: absolute;
+        appearance: none;
+
+    }
+}
+
+input+svg {
+    cursor: pointer;
+}
+
+
+input[type="radio"]:hover+svg,
+input[type="radio"]:checked+svg,
+input[type="radio"]:focus+svg {
+    fill: h.$fontcolor-header;
+    border-radius: 25px;
+    outline: max(2px, 0.15em) solid h.$fontcolor-header;
 }
